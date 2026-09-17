@@ -1,0 +1,1807 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#070707" />
+
+  <title>Эвакуатор Актобе 24/7 — +7 705 218 90 11</title>
+  <meta name="description" content="Эвакуатор в Актобе и регионе 24/7. Подача 15–30 минут. Бережная погрузка. Межгород. Звоните/пишите: +7 705 218 90 11." />
+
+  <!-- Fonts (clean + brutal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================
+       THEME: BLACK / ORANGE / WHITE (RUGGED, MOBILE-FIRST)
+    ========================================================= */
+    :root{
+      --bg:#050505;
+      --bg2:#0a0a0a;
+      --card:#0f0f10;
+
+      --text:#ffffff;
+      --muted: rgba(255,255,255,.74);
+      --muted2: rgba(255,255,255,.56);
+
+      --line: rgba(255,255,255,.10);
+
+      --orange:#ff7a00;
+      --orange2:#ff4d00;
+
+      --max: 1180px;
+      --r12: 12px;
+      --r16: 16px;
+      --r22: 22px;
+
+      --shadow: 0 18px 70px rgba(0,0,0,.65);
+
+      --font: "Manrope", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --fontHead: "Bebas Neue", ui-sans-serif, system-ui;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--font);
+      color: var(--text);
+      background:
+        radial-gradient(1100px 620px at 80% -10%, rgba(255,122,0,.16), transparent 62%),
+        radial-gradient(900px 520px at -10% 20%, rgba(255,77,0,.10), transparent 58%),
+        linear-gradient(180deg, #050505 0%, #070707 45%, #050505 100%);
+      overflow-x:hidden;
+    }
+
+    /* Grit */
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,255,255,.03) 0px,
+          rgba(255,255,255,.03) 1px,
+          transparent 1px,
+          transparent 10px
+        );
+      opacity:.16;
+      mix-blend-mode: overlay;
+      z-index:-2;
+    }
+    /* Vignette to separate background layers */
+    body:after{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(1200px 700px at 50% 10%, rgba(0,0,0,0), rgba(0,0,0,.65));
+      z-index:-1;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:100%; max-width:var(--max); margin:0 auto; padding: 0 16px; }
+
+    /* Icons */
+    .ic{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      background: rgba(255,122,0,.14);
+      border: 1px solid rgba(255,122,0,.28);
+      display:flex; align-items:center; justify-content:center;
+      color:#fff;
+      flex: 0 0 auto;
+    }
+    .ic svg{ width: 18px; height: 18px; display:block; }
+    .svg18{ width:18px; height:18px; display:block; }
+    .svg20{ width:20px; height:20px; display:block; }
+    .svg22{ width:22px; height:22px; display:block; }
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+    header{
+      position:sticky; top:0; z-index:80;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(5,5,5,.82);
+      border-bottom: 1px solid rgba(255,122,0,.30);
+    }
+    .toprow{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0;
+      gap: 12px;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 0; /* allow shrink */
+      flex: 1 1 auto;
+    }
+    .logo{
+      width: 56px;
+      height: 40px;
+      object-fit: contain;
+      display:block;
+      border: none;
+      outline: none;
+      border-radius: 0;
+      background: transparent;
+      flex: 0 0 auto;
+    }
+    .brand .textwrap{
+      min-width: 0; /* allow ellipsis */
+    }
+    .brand .title{
+      font-family: var(--fontHead);
+      font-size: 22px;
+      letter-spacing: 1.2px;
+      line-height:1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 62vw;
+    }
+    .brand .sub{
+      font-size: 12px;
+      color: var(--muted2);
+      margin-top: 2px;
+      letter-spacing: .2px;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 62vw;
+    }
+
+    /* Desktop nav */
+    .nav{
+      display:flex; align-items:center; gap: 16px;
+      flex: 0 0 auto;
+    }
+    .nav a{
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.82);
+      padding: 10px 8px;
+      position:relative;
+    }
+    .nav a:after{
+      content:"";
+      position:absolute; left:8px; right:8px; bottom:6px;
+      height:2px;
+      background: transparent;
+      transform: scaleX(0);
+      transform-origin:left;
+      transition: transform .14s ease, background .14s ease;
+    }
+    .nav a:hover:after{
+      background: rgba(255,122,0,.90);
+      transform: scaleX(1);
+    }
+    .nav a.active{ color:#fff; }
+    .nav a.active:after{
+      background: rgba(255,122,0,1);
+      transform: scaleX(1);
+    }
+
+    .rightbox{
+      display:flex; align-items:center; gap: 10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      flex: 0 0 auto;
+    }
+    .phonepill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,122,0,.12);
+      border: 1px solid rgba(255,122,0,.30);
+      font-weight: 800;
+      letter-spacing: .2px;
+      white-space:nowrap;
+    }
+    .mini-btn{
+      width: 42px; height: 42px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer;
+      color:#fff;
+    }
+
+    /* Mobile drawer */
+    .drawer{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.75);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display:none;
+      z-index: 120;
+    }
+    .drawer.open{ display:block; }
+    .drawerpanel{
+      position:absolute;
+      top:0; right:0;
+      width: min(92vw, 380px);
+      height: 100%;
+      background: linear-gradient(180deg, rgba(10,10,10,.96), rgba(5,5,5,.96));
+      border-left: 1px solid rgba(255,122,0,.22);
+      padding: 18px;
+      box-shadow: -20px 0 80px rgba(0,0,0,.6);
+      display:flex;
+      flex-direction:column;
+      gap: 14px;
+    }
+    .drawerpanel .dtitle{
+      font-family: var(--fontHead);
+      font-size: 22px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.92);
+    }
+    .dlink{
+      padding: 14px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      font-weight: 800;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .dlink:hover{ border-color: rgba(255,122,0,.30); }
+    .drawerclose{
+      display:flex; justify-content:space-between; align-items:center;
+      gap: 10px;
+    }
+
+    /* =========================================================
+       ROUTING PAGES
+    ========================================================= */
+    main{ padding-bottom: 54px; }
+    .page{ display:none; padding: 22px 0 70px; animation: in .18s ease both; }
+    .page.active{ display:block; }
+    @keyframes in{
+      from{ opacity:0; transform: translateY(8px); }
+      to{ opacity:1; transform: translateY(0); }
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+    .hero{ padding: 18px 0 10px; }
+    .hero-box{
+      border-radius: var(--r22);
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.68), rgba(0,0,0,.34)),
+        radial-gradient(700px 280px at 76% 10%, rgba(255,122,0,.18), transparent 62%),
+        radial-gradient(520px 240px at 15% 25%, rgba(255,77,0,.10), transparent 60%),
+        rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      position:relative;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .hero-box:before{
+      content:"";
+      position:absolute;
+      inset:-60px -80px auto auto;
+      width: 220px; height: 220px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,122,0,.18), transparent 66%);
+      pointer-events:none;
+    }
+
+    .eyebrow{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom: 10px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,122,0,.14);
+      border: 1px solid rgba(255,122,0,.28);
+      font-weight: 800;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .badge .dot{
+      width: 9px; height: 9px;
+      border-radius: 99px;
+      background: var(--orange);
+      box-shadow: 0 0 0 4px rgba(255,122,0,.16);
+    }
+    .badge2{
+      font-size:12px;
+      color: rgba(255,255,255,.75);
+      font-weight: 700;
+      letter-spacing:.2px;
+    }
+
+    /* (4) typing text component */
+    @keyframes blink {
+      0%,100% { border-color: transparent; }
+      50% { border-color: var(--orange); }
+    }
+    #typing-text{
+      color: #fff;
+      border-right: 3.5px solid var(--orange);
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: var(--fontHead);
+      font-size: clamp(2.1rem, 7vw, 3.2rem);
+      line-height: 0.95;
+      display: inline-block;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      animation: blink 0.7s steps(2) infinite;
+      max-width: 100%;
+    }
+
+    .hero-sub{
+      margin: 12px 0 0;
+      color: rgba(255,255,255,.80);
+      font-size: 15px;
+      line-height: 1.65;
+      max-width: 72ch;
+      font-weight: 600;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+      margin-top: 16px;
+      align-items:stretch;
+    }
+
+    .facts{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .fact{
+      background: rgba(0,0,0,.24);
+      border-radius: var(--r16);
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .fact .k{
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      color: rgba(255,255,255,.70);
+      margin-bottom: 6px;
+    }
+    .fact .v{
+      font-family: var(--fontHead);
+      font-size: 28px;
+      letter-spacing: 1.2px;
+      color: #fff;
+      line-height: 1;
+    }
+    .fact .v span{ color: var(--orange); }
+
+    .thin{
+      height: 2px;
+      background: linear-gradient(90deg, rgba(255,122,0,.0), rgba(255,122,0,1), rgba(255,122,0,.0));
+      opacity:.9;
+      margin: 18px 0;
+      border-radius: 99px;
+    }
+
+    /* =========================================================
+       SECTION
+    ========================================================= */
+    .section{ margin-top: 22px; }
+    .section h2{
+      margin: 0 0 10px;
+      font-family: var(--fontHead);
+      font-size: 28px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .section p.desc{
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 14.5px;
+      max-width: 82ch;
+      font-weight: 600;
+    }
+
+    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .grid2{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+    .block{
+      background: rgba(255,255,255,.05);
+      border-radius: var(--r22);
+      padding: 18px;
+      box-shadow: 0 10px 60px rgba(0,0,0,.45);
+      position:relative;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .block:before{
+      content:"";
+      position:absolute;
+      left:0; top:0; bottom:0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--orange), rgba(255,122,0,.15));
+      opacity:.95;
+    }
+
+    .list{
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .itemline{
+      background: rgba(0,0,0,.22);
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,.08);
+      display:flex;
+      gap: 12px;
+      align-items:flex-start;
+    }
+    .itemline .t{
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.0px;
+      font-size: 12.5px;
+      margin-bottom: 4px;
+      color: rgba(255,255,255,.92);
+    }
+    .itemline .p{
+      margin:0;
+      color: var(--muted);
+      line-height:1.65;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* =========================================================
+       FORMS
+    ========================================================= */
+    .field{ display:flex; flex-direction:column; gap:8px; margin-bottom: 12px; }
+    label{
+      font-size: 12px;
+      color: rgba(255,255,255,.80);
+      font-weight: 800;
+      letter-spacing: 1.0px;
+      text-transform: uppercase;
+    }
+    input, textarea{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.30);
+      color: rgba(255,255,255,.92);
+      padding: 12px 12px;
+      outline:none;
+      transition: border-color .12s ease, background .12s ease;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    textarea{ min-height: 110px; resize: vertical; }
+    input:focus, textarea:focus{
+      border-color: rgba(255,122,0,.65);
+      background: rgba(255,255,255,.04);
+    }
+
+    /* Footer */
+    footer{
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.20);
+      padding: 18px 0 26px;
+      color: var(--muted2);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .foot{
+      display:flex; justify-content:space-between; align-items:center;
+      gap:12px; flex-wrap:wrap;
+    }
+    .dev{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,122,0,.10);
+      border: 1px solid rgba(255,122,0,.25);
+      color: rgba(255,255,255,.88);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .dev b{ color:#fff; }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .grid3{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
+      .facts{ grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 860px){
+      .nav{ display:none; }
+      .phonepill{ display:none; }
+      .brand .title{ max-width: 58vw; font-size: 21px; }
+      .brand .sub{ max-width: 58vw; }
+    }
+    @media (max-width: 420px){
+      .brand .title{ max-width: 54vw; font-size: 20px; }
+      .brand .sub{ max-width: 54vw; }
+      .logo{ width: 52px; height: 38px; }
+    }
+    @media (min-width: 861px){
+      #menuBtn{ display:none; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+    }
+
+    /* =========================================================
+       (2) MORPH BUTTON TEMPLATE (orange/black/white)
+    ========================================================= */
+    .morph-btn{
+      position: relative;
+      padding: 18px 34px;
+      font-family: var(--font);
+      font-size: 12.5px;
+      font-weight: 900;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      overflow: visible;
+      isolation: isolate;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      line-height:1;
+      user-select:none;
+    }
+    .morph-btn .btn-fill{
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,122,0,1), rgba(255,77,0,1));
+      border-radius: 4px;
+      transition: border-radius 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 1;
+      box-shadow: 0 10px 40px rgba(0,0,0,.45);
+    }
+    .morph-btn:hover .btn-fill{
+      border-radius: 50px;
+      animation: jelly 0.5s ease;
+      box-shadow: 0 0 26px rgba(255,122,0,.25);
+    }
+    @keyframes jelly{
+      0%{ transform: scale(1, 1); }
+      30%{ transform: scale(1.15, 0.85); }
+      50%{ transform: scale(0.9, 1.1); }
+      70%{ transform: scale(1.05, 0.95); }
+      100%{ transform: scale(1, 1); }
+    }
+
+    .morph-btn .orbit-dots{ position: absolute; inset: -30px; pointer-events: none; }
+    .morph-btn .orbit-dots span{
+      position:absolute;
+      width: 7px; height: 7px;
+      background: var(--orange);
+      border-radius: 50%;
+      opacity: 1;
+      border: 1px solid rgba(0,0,0,.45);
+      box-shadow: 0 0 18px rgba(255,122,0,.25);
+    }
+    .morph-btn .orbit-dots span:nth-child(1){ top:0; left:50%; animation: orbit1 3s linear infinite; }
+    .morph-btn .orbit-dots span:nth-child(2){ bottom:0; left:50%; animation: orbit2 3s linear infinite; }
+    .morph-btn .orbit-dots span:nth-child(3){ top:50%; left:0; animation: orbit3 4s linear infinite; }
+    .morph-btn .orbit-dots span:nth-child(4){ top:50%; right:0; animation: orbit4 4s linear infinite; }
+
+    @keyframes orbit1{
+      0%{ transform: translateX(-50%) translateY(0) scale(1); }
+      25%{ transform: translateX(30px) translateY(10px) scale(0.6); }
+      50%{ transform: translateX(-50%) translateY(20px) scale(1); }
+      75%{ transform: translateX(-80px) translateY(10px) scale(0.6); }
+      100%{ transform: translateX(-50%) translateY(0) scale(1); }
+    }
+    @keyframes orbit2{
+      0%{ transform: translateX(-50%) translateY(0) scale(0.6); }
+      25%{ transform: translateX(-80px) translateY(-10px) scale(1); }
+      50%{ transform: translateX(-50%) translateY(-20px) scale(0.6); }
+      75%{ transform: translateX(30px) translateY(-10px) scale(1); }
+      100%{ transform: translateX(-50%) translateY(0) scale(0.6); }
+    }
+    @keyframes orbit3{
+      0%{ transform: translateY(-50%) translateX(0) scale(0.8); }
+      50%{ transform: translateY(-50%) translateX(-15px) scale(1.2); }
+      100%{ transform: translateY(-50%) translateX(0) scale(0.8); }
+    }
+    @keyframes orbit4{
+      0%{ transform: translateY(-50%) translateX(0) scale(1.2); }
+      50%{ transform: translateY(-50%) translateX(15px) scale(0.8); }
+      100%{ transform: translateY(-50%) translateX(0) scale(1.2); }
+    }
+
+    .morph-btn .btn-text{ position: relative; display: inline-block; z-index: 3; }
+    .morph-btn .btn-text span{
+      display:inline-block;
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition-delay: calc(var(--i) * 0.03s);
+    }
+    .morph-btn:hover .btn-text span{
+      transform: translateY(-100%);
+      animation: letterBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+      animation-delay: calc(var(--i) * 0.03s);
+    }
+    @keyframes letterBounce{
+      0%{ transform: translateY(0); }
+      40%{ transform: translateY(-120%); }
+      70%{ transform: translateY(10%); }
+      100%{ transform: translateY(0); }
+    }
+
+    .morph-btn .corners span{
+      position:absolute;
+      width: 18px; height: 18px;
+      border: 2px solid rgba(255,255,255,.75);
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      opacity: 1;
+      z-index:2;
+    }
+    .morph-btn .corners span:nth-child(1){ top:-10px; left:-10px; border-right:none; border-bottom:none; }
+    .morph-btn .corners span:nth-child(2){ top:-10px; right:-10px; border-left:none; border-bottom:none; }
+    .morph-btn .corners span:nth-child(3){ bottom:-10px; left:-10px; border-right:none; border-top:none; }
+    .morph-btn .corners span:nth-child(4){ bottom:-10px; right:-10px; border-left:none; border-top:none; }
+
+    .morph-btn .shadow{
+      position:absolute;
+      inset: 5px;
+      background: rgba(0,0,0,0.38);
+      border-radius: 4px;
+      filter: blur(15px);
+      z-index:0;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform: translateY(10px);
+    }
+    .morph-btn:hover .shadow{
+      border-radius: 50px;
+      transform: translateY(15px) scale(1.1);
+      filter: blur(20px);
+    }
+    .morph-btn:active .btn-fill{ transform: scale(0.92); transition: transform 0.1s ease; }
+    .morph-btn:active .shadow{
+      transform: translateY(3px) scale(0.85);
+      filter: blur(8px);
+      opacity: 0.5;
+      transition: all 0.1s ease;
+    }
+    .morph-btn:active .btn-text{ transform: scale(0.95); transition: transform 0.1s ease; }
+    .morph-btn:active .orbit-dots span{ animation-play-state: paused; transform: scale(1.5); }
+
+    /* =========================================================
+       (1) NEON CARD TEMPLATE (orange)
+    ========================================================= */
+    .neon-card{
+      width: 100%;
+      max-width: 100%;
+      background: rgba(0, 0, 0, 0.40);
+      border: 2px solid rgba(255,122,0,.95);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55), 0 0 0 0 transparent;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+    .neon-card:hover{
+      transform: translateY(-4px);
+      box-shadow:
+        0 0 10px rgba(255,122,0,.75),
+        0 0 20px rgba(255,122,0,.55),
+        0 0 30px rgba(255,122,0,0.22);
+    }
+    .neon-card img{
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      filter: saturate(1.05) contrast(1.08);
+      background: #151515;
+    }
+    .neon-card-content{ padding: 16px; color: white; }
+    .neon-card h3{
+      margin: 0 0 8px 0;
+      font-family: var(--fontHead);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+    .neon-card p{
+      margin: 0;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.80);
+      line-height: 1.6;
+      font-weight: 600;
+    }
+    .neon-card::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 122, 0, 0.18), transparent);
+      transition: left 0.9s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .neon-card:hover::before{ left: 100%; }
+
+    /* =========================================================
+       (3) SCROLLING TEMPLATE
+    ========================================================= */
+    :root{ --total-items: 9; --animation-duration: 26s; }
+    .scorlling{
+      width: 100%;
+      max-width: 1536px;
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      box-shadow: 0 14px 60px rgba(0,0,0,.45);
+      mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 16%,
+        rgba(0, 0, 0, 1) 84%,
+        rgba(0, 0, 0, 0)
+      );
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .scorlling img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+      filter: contrast(1.12) saturate(1.02);
+      background: #151515;
+    }
+    @keyframes scrollleft{ to{ left: -260px; } }
+    .scorlling .item{
+      width: 250px;
+      height: 100%;
+      border-radius: 12px;
+      position: absolute;
+      overflow: hidden;
+      left: max(calc(250px * var(--total-items)), 100%);
+      animation-name: scrollleft;
+      animation-duration: var(--animation-duration);
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .item1{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 1) * -1); }
+    .item2{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 2) * -1); }
+    .item3{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 3) * -1); }
+    .item4{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 4) * -1); }
+    .item5{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 5) * -1); }
+    .item6{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 6) * -1); }
+    .item7{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 7) * -1); }
+    .item8{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 8) * -1); }
+    .item9{ animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 9) * -1); }
+
+    /* =========================================================
+       (5) SPLASH BUTTON TEMPLATE (orange)
+    ========================================================= */
+    .splashbtn .button{
+      --white: #ffffff;
+      --purple-100: #ffd1a8;
+      --purple-200: #ffb36b;
+      --purple-300: #ff8f2a;
+      --purple-400: #ff7a00;
+      --purple-500: #b84b00;
+      --radius: 18px;
+
+      border-radius: var(--radius);
+      outline: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: var(--font);
+      font-weight: 900;
+      background: transparent;
+      letter-spacing: -0.4px;
+      border: 0;
+      position: relative;
+      width: 220px;
+      height: 76px;
+      transform: rotate(353deg) skewX(4deg);
+    }
+    .splashbtn .bg{ position:absolute; inset:0; border-radius: inherit; filter: blur(1px); }
+    .splashbtn .bg::before,
+    .splashbtn .bg::after{
+      content:"";
+      position:absolute; inset:0;
+      border-radius: calc(var(--radius) * 1.1);
+      background: var(--purple-500);
+    }
+    .splashbtn .bg::before{
+      filter: blur(6px);
+      transition: all 0.3s ease;
+      box-shadow:
+        -7px 6px 0 0 rgba(255,122,0,.28),
+        -14px 12px 0 0 rgba(255,122,0,.18),
+        -21px 18px 4px 0 rgba(255,122,0,.12);
+    }
+    .splashbtn .wrap{
+      border-radius: inherit;
+      overflow: hidden;
+      height: 100%;
+      transform: translate(6px, -6px);
+      padding: 3px;
+      background: linear-gradient(to bottom, var(--purple-100) 0%, var(--purple-400) 100%);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .splashbtn .outline{
+      position: absolute;
+      overflow: hidden;
+      inset: 0;
+      opacity: 0;
+      border-radius: inherit;
+      transition: all 0.4s ease;
+    }
+    .splashbtn .outline::before{
+      content:"";
+      position:absolute;
+      inset: 2px;
+      width:120px;
+      height:300px;
+      margin:auto;
+      background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+      animation: spin 3s linear infinite;
+      animation-play-state: paused;
+    }
+    .splashbtn .content{
+      pointer-events:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:1;
+      position:relative;
+      height:100%;
+      gap: 12px;
+      border-radius: calc(var(--radius) * 0.85);
+      font-weight: 900;
+      transition: all 0.3s ease;
+      background: linear-gradient(to bottom, var(--purple-300) 0%, var(--purple-400) 100%);
+      box-shadow:
+        inset -2px 12px 11px -5px rgba(255,255,255,.12),
+        inset 1px -3px 11px 0px rgba(0,0,0,.35);
+    }
+    .splashbtn .content::before{
+      content:"";
+      inset:0;
+      position:absolute;
+      z-index:10;
+      width:80%;
+      top:45%;
+      bottom:35%;
+      opacity:.65;
+      margin:auto;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,.35));
+      filter: brightness(1.1) blur(5px);
+    }
+    .splashbtn .char{ display:flex; align-items:center; justify-content:center; }
+    .splashbtn .char span{ display:block; color:transparent; position:relative; }
+    .splashbtn .char span::after{
+      content: attr(data-label);
+      position:absolute;
+      color: var(--white);
+      text-shadow: -1px 1px 2px rgba(0,0,0,.45);
+      left:0;
+      opacity:1;
+    }
+    .splashbtn .icon{ z-index:10; }
+    .splashbtn .icon div,
+    .splashbtn .icon div::before,
+    .splashbtn .icon div::after{
+      height: 3px;
+      border-radius: 1px;
+      background-color: var(--white);
+    }
+    .splashbtn .icon div{
+      position: relative;
+      width: 24px;
+      box-shadow: -2px 2px 5px rgba(0,0,0,.35);
+      transform: scale(0.9);
+    }
+    .splashbtn .icon div::before,
+    .splashbtn .icon div::after{
+      content:"";
+      position:absolute;
+      right:0;
+      width: 14px;
+      border-radius: 15px;
+      transform-origin: center right;
+    }
+    .splashbtn .icon div::before{ transform: rotate(44deg); top: 1px; }
+    .splashbtn .icon div::after{ transform: rotate(316deg); bottom: 1px; }
+    .splashbtn .path{
+      position:absolute;
+      z-index:12;
+      bottom:0; left:0; right:0;
+      stroke-dasharray: 150 480;
+      stroke-dashoffset: 150;
+      pointer-events:none;
+    }
+    .splashbtn .splash{
+      position:absolute;
+      top:0; left:0;
+      pointer-events:none;
+      stroke-dasharray: 60 60;
+      stroke-dashoffset: 60;
+      transform: translate(-17%, -31%);
+      stroke: rgba(255,122,0,.85);
+    }
+    .splashbtn .button:hover .wrap{ transform: translate(8px, -8px); }
+    .splashbtn .button:hover .outline{ opacity:1; }
+    .splashbtn .button:hover .outline::before{ animation-play-state: running; }
+    .splashbtn .button:active .bg::before{
+      filter: blur(6px);
+      opacity: 0.75;
+      box-shadow:
+        -7px 6px 0 0 rgba(255,122,0,.22),
+        -14px 12px 0 0 rgba(255,122,0,.14);
+    }
+    .splashbtn .button:active .wrap{ transform: translate(3px, -3px); }
+    .splashbtn .button:active .splash{ animation: splash 0.8s cubic-bezier(0.3, 0, 0, 1) forwards 0.05s; }
+    .splashbtn .button:focus .path{ animation: path 1.6s ease forwards 0.2s; }
+
+    @keyframes spin{ 0%{ transform: rotate(0deg);} 100%{ transform: rotate(360deg);} }
+    @keyframes path{ from{ stroke: white; } to{ stroke-dashoffset: -480; stroke: rgba(255,255,255,.9); } }
+    @keyframes splash{ to{ stroke-dasharray: 2 60; stroke-dashoffset: -60; } }
+  </style>
+</head>
+
+<body>
+  <!-- SVG ICON SET -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.2 2 2 0 0 1 4.06 2h2a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L7.1 9.4a16 16 0 0 0 6 6l1.07-1.05a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+      <path d="M8 9h8M8 13h6"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="M18 6 6 18M6 6l12 12"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <path d="M12 8v5l3 2"/>
+      <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24">
+      <path d="M7 3h10v18l-2-1-2 1-2-1-2 1-2-1-2 1V3z"/>
+      <path d="M9 7h6M9 11h6M9 15h5"/>
+    </symbol>
+    <symbol id="i-city" viewBox="0 0 24 24">
+      <path d="M3 21V9l6-3v15"/>
+      <path d="M9 21V4l6 3v14"/>
+      <path d="M15 21v-9l6-3v12"/>
+      <path d="M5.5 11h1M5.5 14h1M5.5 17h1M11.5 9h1M11.5 12h1M11.5 15h1M17.5 13h1M17.5 16h1M17.5 19h1"/>
+    </symbol>
+    <symbol id="i-road" viewBox="0 0 24 24">
+      <path d="M6 21 10 3h4l4 18"/>
+      <path d="M12 7v4M12 15v2"/>
+    </symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24">
+      <path d="M6 3h7a5 5 0 0 1 0 10H6z"/>
+      <path d="M6 3v18"/>
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24">
+      <path d="M13 2 3 14h7l-1 8 12-14h-7l-1-6z"/>
+    </symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24">
+      <path d="M20 12 12 20 4 12V4h8l8 8z"/>
+      <path d="M7.5 7.5h.01"/>
+    </symbol>
+    <symbol id="i-location" viewBox="0 0 24 24">
+      <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+      <path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14"/>
+      <path d="M13 6l6 6-6 6"/>
+    </symbol>
+  </svg>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawerpanel" role="dialog" aria-modal="true" aria-label="Меню">
+      <div class="drawerclose">
+        <div class="dtitle">Меню</div>
+        <button class="mini-btn" id="closeDrawer" aria-label="Закрыть меню">
+          <svg class="svg20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <use href="#i-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <a class="dlink" href="#home" data-route>Главная
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-arrow"></use>
+        </svg>
+      </a>
+      <a class="dlink" href="#services" data-route>Услуги
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-arrow"></use>
+        </svg>
+      </a>
+      <a class="dlink" href="#prices" data-route>Цены
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-arrow"></use>
+        </svg>
+      </a>
+      <a class="dlink" href="#contacts" data-route>Контакты
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-arrow"></use>
+        </svg>
+      </a>
+
+      <div class="thin"></div>
+
+      <a class="dlink" href="tel:+77052189011">
+        Позвонить
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-phone"></use>
+        </svg>
+      </a>
+
+      <a class="dlink" href="https://wa.me/77052189011" target="_blank" rel="noopener">
+        WhatsApp
+        <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <use href="#i-chat"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="toprow">
+        <a class="brand" href="#home" data-route>
+          <img class="logo" src="images/icon.jpg" alt="Эвакуатор Актобе" />
+          <span class="textwrap">
+            <div class="title">ЭВАКУАТОР АКТОБЕ 24/7</div>
+            <div class="sub">Подача 15–30 мин • Регион • Бережно</div>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <a href="#home" data-route>Главная</a>
+          <a href="#services" data-route>Услуги</a>
+          <a href="#prices" data-route>Цены</a>
+          <a href="#contacts" data-route>Контакты</a>
+        </nav>
+
+        <div class="rightbox">
+          <a class="phonepill" href="tel:+77052189011" title="Позвонить">
+            <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-phone"></use>
+            </svg>
+            <span>+7 705 218 90 11</span>
+          </a>
+
+          <button class="mini-btn" id="menuBtn" aria-label="Открыть меню">
+            <svg class="svg20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE: HOME -->
+    <section class="page active" id="page-home" data-page="home">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-box">
+            <div class="eyebrow">
+              <span class="badge"><span class="dot"></span> срочный выезд</span>
+              <span class="badge2">Актобе • круглосуточно • цена фиксируется до выезда</span>
+            </div>
+
+            <!-- (4) typing-text template -->
+            <span id="typing-text">КРУГЛОСУТОЧНО</span>
+
+            <p class="hero-sub">
+              Эвакуатор в Актобе и регионе: ДТП, поломка, не заводится, сложная погрузка. Работаем аккуратно и быстро — без лишних разговоров.
+              <br>Телефон / WhatsApp: <b>+7 705 218 90 11</b>
+            </p>
+
+            <div class="hero-grid">
+              <div>
+                <!-- (2) morph-btn template used as main CTAs -->
+                <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top: 12px;">
+                  <a class="morph-btn" href="tel:+77052189011" role="button" aria-label="Позвонить">
+                    <span class="btn-fill"></span>
+                    <span class="shadow"></span>
+                    <span class="btn-text">
+                      <span style="--i:0">В</span><span style="--i:1">Ы</span><span style="--i:2">З</span><span style="--i:3">В</span><span style="--i:4">А</span><span style="--i:5">Т</span><span style="--i:6">Ь</span>
+                    </span>
+                    <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                    <span class="corners"><span></span><span></span><span></span><span></span></span>
+                  </a>
+
+                  <a class="morph-btn" href="https://wa.me/77052189011" target="_blank" rel="noopener" role="button" aria-label="Написать в WhatsApp">
+                    <span class="btn-fill"></span>
+                    <span class="shadow"></span>
+                    <span class="btn-text">
+                      <span style="--i:0">W</span><span style="--i:1">H</span><span style="--i:2">A</span><span style="--i:3">T</span><span style="--i:4">S</span><span style="--i:5">A</span><span style="--i:6">P</span><span style="--i:7">P</span>
+                    </span>
+                    <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                    <span class="corners"><span></span><span></span><span></span><span></span></span>
+                  </a>
+
+                  <a href="#prices" data-route style="display:inline-flex; align-items:center; gap:10px; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); font-weight: 800; letter-spacing:1.1px; text-transform: uppercase; font-size: 12px;">
+                    <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <use href="#i-tag"></use>
+                    </svg>
+                    Цены
+                  </a>
+                </div>
+
+                <div class="thin"></div>
+
+                <div class="list" style="margin-top:0;">
+                  <div class="itemline">
+                    <div class="ic">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <use href="#i-clock"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="t">Быстрая подача</div>
+                      <p class="p">Обычно 15–30 минут по городу (в зависимости от района и трафика).</p>
+                    </div>
+                  </div>
+
+                  <div class="itemline">
+                    <div class="ic">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <use href="#i-shield"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="t">Бережная погрузка</div>
+                      <p class="p">Фиксация и транспортировка без риска для кузова и подвески.</p>
+                    </div>
+                  </div>
+
+                  <div class="itemline">
+                    <div class="ic">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <use href="#i-receipt"></use>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="t">Честная стоимость</div>
+                      <p class="p">Стоимость согласуется заранее — без сюрпризов на месте.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="facts">
+                  <div class="fact">
+                    <div class="k">режим</div>
+                    <div class="v"><span>24/7</span></div>
+                  </div>
+                  <div class="fact">
+                    <div class="k">подача</div>
+                    <div class="v"><span>15–30</span> мин</div>
+                  </div>
+                  <div class="fact">
+                    <div class="k">город</div>
+                    <div class="v"><span>Актобе</span></div>
+                  </div>
+                  <div class="fact">
+                    <div class="k">регион</div>
+                    <div class="v"><span>да</span></div>
+                  </div>
+                </div>
+
+                <div class="thin"></div>
+
+                <!-- (5) splash button template used -->
+                <div class="block splashbtn">
+                  <h2 style="margin:0 0 10px; font-size: 22px;">СРОЧНЫЙ ВЫЗОВ</h2>
+
+                  <a href="tel:+77052189011" style="display:inline-block;">
+                    <button class="button" type="button" aria-label="Позвонить эвакуатор">
+                      <div class="bg"></div>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 342 208" height="208" width="342" class="splash" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-width="3" d="M54.1054 99.7837C54.1054 99.7837 40.0984 90.7874 26.6893 97.6362C13.2802 104.485 1.5 97.6362 1.5 97.6362"></path>
+                        <path stroke-linecap="round" stroke-width="3" d="M285.273 99.7841C285.273 99.7841 299.28 90.7879 312.689 97.6367C326.098 104.486 340.105 95.4893 340.105 95.4893"></path>
+                      </svg>
+
+                      <div class="wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 221 42" height="42" width="221" class="path" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-width="3" d="M182.674 2H203C211.837 2 219 9.16344 219 18V24C219 32.8366 211.837 40 203 40H18C9.16345 40 2 32.8366 2 24V18C2 9.16344 9.16344 2 18 2H47.8855"></path>
+                        </svg>
+
+                        <div class="outline"></div>
+                        <div class="content">
+                          <span class="char">
+                            <span data-label="З">З</span>
+                            <span data-label="В">В</span>
+                            <span data-label="О">О</span>
+                            <span data-label="Н">Н</span>
+                            <span data-label="О">О</span>
+                            <span data-label="К">К</span>
+                          </span>
+                          <div class="icon" aria-hidden="true"><div></div></div>
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Услуги</h2>
+
+          <div class="grid3">
+            <!-- (1) neon-card template used -->
+            <div class="neon-card">
+              <img src="images/service-city.jpg" alt="Эвакуатор по городу" />
+              <div class="neon-card-content">
+                <h3>По городу</h3>
+                <p>Подача по Актобе. Доставка на СТО, домой, на стоянку.</p>
+              </div>
+            </div>
+
+            <div class="neon-card">
+              <img src="images/service-highway.jpg" alt="Эвакуатор межгород" />
+              <div class="neon-card-content">
+                <h3>Регион / трасса</h3>
+                <p>Трасса и регионы. Маршрут и стоимость согласуются заранее.</p>
+              </div>
+            </div>
+
+            <div class="neon-card">
+              <img src="images/service-help.jpg" alt="Сложные случаи" />
+              <div class="neon-card-content">
+                <h3>Сложные случаи</h3>
+                <p>ДТП, блокировка колеса, паркинг, низкая посадка — решаем.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Парк техники</h2>
+
+          <!-- (3) scrolling template used -->
+          <div class="scorlling" aria-label="Бегущая лента фотографий">
+            <div class="item item1"><img src="images/tow-1.jpg" alt="Эвакуатор 1" /></div>
+            <div class="item item2"><img src="images/tow-2.jpg" alt="Эвакуатор 2" /></div>
+            <div class="item item3"><img src="images/tow-3.jpg" alt="Эвакуатор 3" /></div>
+            <div class="item item4"><img src="images/tow-4.jpg" alt="Эвакуатор 4" /></div>
+            <div class="item item5"><img src="images/tow-5.jpg" alt="Эвакуатор 5" /></div>
+            <div class="item item6"><img src="images/tow-6.jpg" alt="Эвакуатор 6" /></div>
+            <div class="item item7"><img src="images/tow-7.jpg" alt="Эвакуатор 7" /></div>
+            <div class="item item8"><img src="images/tow-8.jpg" alt="Эвакуатор 8" /></div>
+            <div class="item item9"><img src="images/tow-9.jpg" alt="Эвакуатор 9" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: SERVICES -->
+    <section class="page" id="page-services" data-page="services">
+      <div class="container">
+        <div class="section">
+          <h2>Услуги эвакуатора</h2>
+          <p class="desc">Работаем по городу и за пределами. Бережно, быстро, без лишних обещаний.</p>
+
+          <div class="block">
+            <div class="list">
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-city"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Эвакуатор по Актобе</div>
+                  <p class="p">Оперативная подача по районам. Доставка в любую точку города.</p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-road"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Регион / трасса</div>
+                  <p class="p">Перевозка за город. Стоимость фиксируется до выезда.</p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-parking"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Паркинг / двор</div>
+                  <p class="p">Ограниченное пространство, неудобный подъезд — аккуратно вывезем.</p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-bolt"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">ДТП / поломка</div>
+                  <p class="p">Если авто не на ходу — обеспечим правильную погрузку и фиксацию.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="thin"></div>
+
+            <div style="display:flex; gap:14px; flex-wrap:wrap;">
+              <a class="morph-btn" href="tel:+77052189011" role="button" aria-label="Позвонить">
+                <span class="btn-fill"></span>
+                <span class="shadow"></span>
+                <span class="btn-text">
+                  <span style="--i:0">З</span><span style="--i:1">В</span><span style="--i:2">О</span><span style="--i:3">Н</span><span style="--i:4">О</span><span style="--i:5">К</span>
+                </span>
+                <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                <span class="corners"><span></span><span></span><span></span><span></span></span>
+              </a>
+
+              <a class="morph-btn" href="https://wa.me/77052189011" target="_blank" rel="noopener" role="button" aria-label="WhatsApp">
+                <span class="btn-fill"></span>
+                <span class="shadow"></span>
+                <span class="btn-text">
+                  <span style="--i:0">W</span><span style="--i:1">A</span>
+                </span>
+                <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                <span class="corners"><span></span><span></span><span></span><span></span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: PRICES -->
+    <section class="page" id="page-prices" data-page="prices">
+      <div class="container">
+        <div class="section">
+          <h2>Цены</h2>
+          <p class="desc">Ниже — ориентиры. Точная стоимость зависит от точки подачи и сложности погрузки.</p>
+
+          <div class="block">
+            <div class="list">
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-tag"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Легковое по городу</div>
+                  <p class="p"><b>от 5 000 ₸</b></p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-tag"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Кроссовер / минивэн</div>
+                  <p class="p"><b>от 10 000 ₸</b></p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-shield"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Сложная погрузка</div>
+                  <p class="p"><b>по ситуации</b></p>
+                </div>
+              </div>
+
+              <div class="itemline">
+                <div class="ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#i-road"></use>
+                  </svg>
+                </div>
+                <div>
+                  <div class="t">Регион / трасса</div>
+                  <p class="p"><b>договорная</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="thin"></div>
+
+            <div style="display:flex; gap:14px; flex-wrap:wrap;">
+              <a class="morph-btn" href="tel:+77052189011" role="button" aria-label="Уточнить стоимость">
+                <span class="btn-fill"></span>
+                <span class="shadow"></span>
+                <span class="btn-text">
+                  <span style="--i:0">Р</span><span style="--i:1">А</span><span style="--i:2">С</span><span style="--i:3">Ч</span><span style="--i:4">Ё</span><span style="--i:5">Т</span>
+                </span>
+                <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                <span class="corners"><span></span><span></span><span></span><span></span></span>
+              </a>
+
+              <a href="#contacts" data-route style="display:inline-flex; align-items:center; gap:10px; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); font-weight: 800; letter-spacing:1.1px; text-transform: uppercase; font-size: 12px;">
+                <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="#i-chat"></use>
+                </svg>
+                Заявка
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: CONTACTS -->
+    <section class="page" id="page-contacts" data-page="contacts">
+      <div class="container">
+        <div class="section">
+          <h2>Контакты</h2>
+          <p class="desc">Актобе и регион • круглосуточно • <b>+7 705 218 90 11</b></p>
+
+          <div class="grid2">
+            <div class="block">
+              <h2 style="margin:0 0 10px; font-size: 22px;">Заявка</h2>
+
+              <form id="leadForm">
+                <div class="field">
+                  <label for="name">Имя</label>
+                  <input id="name" name="name" autocomplete="name" placeholder="Имя" />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Телефон</label>
+                  <input id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 ..." />
+                </div>
+
+                <div class="field">
+                  <label for="from">Точка подачи</label>
+                  <input id="from" name="from" placeholder="Откуда забрать" />
+                </div>
+
+                <div class="field">
+                  <label for="to">Куда везти</label>
+                  <input id="to" name="to" placeholder="Куда доставить" />
+                </div>
+
+                <div class="field">
+                  <label for="car">Авто</label>
+                  <input id="car" name="car" placeholder="Марка/модель, на ходу или нет" />
+                </div>
+
+                <div class="field">
+                  <label for="msg">Комментарий</label>
+                  <textarea id="msg" name="msg" placeholder="Кратко опишите ситуацию"></textarea>
+                </div>
+
+                <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
+                  <button class="morph-btn" type="submit" aria-label="Отправить в WhatsApp">
+                    <span class="btn-fill"></span>
+                    <span class="shadow"></span>
+                    <span class="btn-text">
+                      <span style="--i:0">О</span><span style="--i:1">Т</span><span style="--i:2">П</span><span style="--i:3">Р</span><span style="--i:4">А</span><span style="--i:5">В</span><span style="--i:6">И</span><span style="--i:7">Т</span><span style="--i:8">Ь</span>
+                    </span>
+                    <span class="orbit-dots"><span></span><span></span><span></span><span></span></span>
+                    <span class="corners"><span></span><span></span><span></span><span></span></span>
+                  </button>
+
+                  <a href="tel:+77052189011" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); font-weight: 800; letter-spacing:1.1px; text-transform: uppercase; font-size: 12px;">
+                    <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <use href="#i-phone"></use>
+                    </svg>
+                    Звонок
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <div class="block">
+              <h2 style="margin:0 0 10px; font-size: 22px;">Связь</h2>
+
+              <div class="list" style="margin-top:0;">
+                <div class="itemline">
+                  <div class="ic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <use href="#i-phone"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="t">Телефон</div>
+                    <p class="p"><b><a href="tel:+77052189011">+7 705 218 90 11</a></b></p>
+                  </div>
+                </div>
+
+                <div class="itemline">
+                  <div class="ic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <use href="#i-chat"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="t">WhatsApp</div>
+                    <p class="p"><b><a href="https://wa.me/77052189011" target="_blank" rel="noopener">Открыть чат</a></b></p>
+                  </div>
+                </div>
+
+                <div class="itemline">
+                  <div class="ic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <use href="#i-location"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="t">Город</div>
+                    <p class="p"><b>Актобе и регион</b></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="thin"></div>
+
+              <div class="splashbtn" style="display:flex; align-items:center; justify-content:flex-start;">
+                <a href="tel:+77052189011" style="display:inline-block;">
+                  <button class="button" type="button" aria-label="Срочно позвонить">
+                    <div class="bg"></div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 342 208" height="208" width="342" class="splash" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-width="3" d="M54.1054 99.7837C54.1054 99.7837 40.0984 90.7874 26.6893 97.6362C13.2802 104.485 1.5 97.6362 1.5 97.6362"></path>
+                      <path stroke-linecap="round" stroke-width="3" d="M285.273 99.7841C285.273 99.7841 299.28 90.7879 312.689 97.6367C326.098 104.486 340.105 95.4893 340.105 95.4893"></path>
+                    </svg>
+
+                    <div class="wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 221 42" height="42" width="221" class="path" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-width="3" d="M182.674 2H203C211.837 2 219 9.16344 219 18V24C219 32.8366 211.837 40 203 40H18C9.16345 40 2 32.8366 2 24V18C2 9.16344 9.16344 2 18 2H47.8855"></path>
+                      </svg>
+
+                      <div class="outline"></div>
+                      <div class="content">
+                        <span class="char">
+                          <span data-label="С">С</span>
+                          <span data-label="Р">Р</span>
+                          <span data-label="О">О</span>
+                          <span data-label="Ч">Ч</span>
+                          <span data-label="Н">Н</span>
+                          <span data-label="О">О</span>
+                        </span>
+                        <div class="icon" aria-hidden="true"><div></div></div>
+                      </div>
+                    </div>
+                  </button>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>© <span id="year"></span> Эвакуатор Актобе • <a href="tel:+77052189011" style="color:#fff;">+7 705 218 90 11</a></div>
+
+        <a class="dev" href="https://wa.me/77074534518" target="_blank" rel="noopener" aria-label="Разработчик Anuken (WhatsApp)">
+          <svg class="svg18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <use href="#i-chat"></use>
+          </svg>
+          Разработчик: <b>Anuken</b>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const WA = "https://wa.me/77052189011";
+
+      // ===== Router (hash) =====
+      const pages = Array.from(document.querySelectorAll("[data-page]"));
+      const routeLinks = Array.from(document.querySelectorAll("[data-route]"));
+      const navLinks = Array.from(document.querySelectorAll("nav a[data-route]"));
+
+      const titles = {
+        home: "Эвакуатор Актобе 24/7 — +7 705 218 90 11",
+        services: "Услуги эвакуатора — Актобе",
+        prices: "Цены на эвакуатор — Актобе",
+        contacts: "Контакты — эвакуатор Актобе 24/7"
+      };
+
+      function setMeta(page){
+        document.title = titles[page] || titles.home;
+      }
+
+      function show(page){
+        pages.forEach(p => p.classList.toggle("active", p.dataset.page === page));
+        navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + page));
+        setMeta(page);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function route(){
+        const hash = (location.hash || "#home").replace("#","");
+        const page = ["home","services","prices","contacts"].includes(hash) ? hash : "home";
+        show(page);
+      }
+
+      window.addEventListener("hashchange", route);
+      route();
+
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ===== Mobile Drawer =====
+      const drawer = document.getElementById("drawer");
+      const menuBtn = document.getElementById("menuBtn");
+      const closeDrawer = document.getElementById("closeDrawer");
+
+      function openDrawer(){
+        drawer.classList.add("open");
+        drawer.setAttribute("aria-hidden","false");
+      }
+      function closeDrawerFn(){
+        drawer.classList.remove("open");
+        drawer.setAttribute("aria-hidden","true");
+      }
+
+      menuBtn?.addEventListener("click", openDrawer);
+      closeDrawer?.addEventListener("click", closeDrawerFn);
+      drawer?.addEventListener("click", (e) => {
+        if(e.target === drawer) closeDrawerFn();
+      });
+
+      // Close drawer on navigation click
+      routeLinks.forEach(l => l.addEventListener("click", () => closeDrawerFn()));
+
+      // ===== (4) Typing animation (phrases) =====
+      const texts = [
+        "КРУГЛОСУТОЧНО",
+        "ЭВАКУАТОР"
+      ];
+      let tIndex = 0;
+      let cIndex = 0;
+      let isDeleting = false;
+      const speed = 85;
+      const delayBeforeDeleting = 1200;
+      const delayBeforeTypingAgain = 220;
+
+      function typeText(){
+        const el = document.getElementById("typing-text");
+        if(!el) return;
+
+        const current = texts[tIndex];
+
+        if(isDeleting){
+          el.textContent = current.substring(0, cIndex);
+          cIndex--;
+          if(cIndex < 0){
+            isDeleting = false;
+            tIndex = (tIndex + 1) % texts.length;
+            setTimeout(typeText, delayBeforeTypingAgain);
+          } else {
+            setTimeout(typeText, speed / 2);
+          }
+        } else {
+          el.textContent = current.substring(0, cIndex);
+          cIndex++;
+          if(cIndex > current.length){
+            isDeleting = true;
+            setTimeout(typeText, delayBeforeDeleting);
+          } else {
+            setTimeout(typeText, speed);
+          }
+        }
+      }
+      window.addEventListener("load", () => setTimeout(typeText, delayBeforeTypingAgain));
+
+      // ===== Contact form -> WhatsApp prefill =====
+      const form = document.getElementById("leadForm");
+      form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+
+        const name = (fd.get("name") || "").toString().trim();
+        const phone = (fd.get("phone") || "").toString().trim();
+        const from = (fd.get("from") || "").toString().trim();
+        const to = (fd.get("to") || "").toString().trim();
+        const car = (fd.get("car") || "").toString().trim();
+        const msg = (fd.get("msg") || "").toString().trim();
+
+        const lines = [
+          "Здравствуйте! Нужен эвакуатор в Актобе и регионе.",
+          name ? `Имя: ${name}` : null,
+          phone ? `Телефон: ${phone}` : null,
+          from ? `Подача: ${from}` : null,
+          to ? `Куда: ${to}` : null,
+          car ? `Авто: ${car}` : null,
+          msg ? `Комментарий: ${msg}` : null
+        ].filter(Boolean);
+
+        const text = encodeURIComponent(lines.join("\n"));
+        window.open(`${WA}?text=${text}`, "_blank", "noopener");
+      });
+    })();
+  </script>
+</body>
+</html>
