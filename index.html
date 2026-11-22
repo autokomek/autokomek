@@ -854,5 +854,17 @@
       });
     }
   </script>
+  <script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[href]');
+  if (!link || typeof gtag !== 'function') return;
+
+  const href = link.getAttribute('href') || '';
+
+  if (href.startsWith('tel:')) {
+    gtag('event', 'phone_click');
+  }
+});
+</script>
 </body>
 </html>
