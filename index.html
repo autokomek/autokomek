@@ -409,10 +409,10 @@
         <div class="w-full lg:w-1/2 relative overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
           <div class="w-full h-[400px] md:h-[500px] relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
             <!-- ✅ hero rotates between images/img1.jpg ... img8.jpg -->
-            <img id="heroImage"
-                 src="images/img1.jpg"
-                 class="w-full h-full object-cover transition-opacity duration-700"
-                 alt="Эвакуатор работа">
+           <img id="heroImage"
+     src="images/evakuator-karaganda.webp"
+     class="w-full h-full object-cover transition-opacity duration-700"
+     alt="Эвакуатор AutoKomek в Караганде 24/7 — перевозка автомобилей и внедорожников">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
           </div>
 
@@ -918,7 +918,11 @@
       const heroEl = document.getElementById('heroImage');
       if (!heroEl) return;
 
-      const images = Array.from({ length: 8 }, (_, i) => `images/img${i + 1}.jpg`);
+      const images = [
+    'images/evakuator-karaganda.webp',
+    'images/evakuator-land-cruiser.webp',
+    'images/perevozka-vnedorozhnika.webp'
+];
       const key = 'autokomekHeroIdx';
 
       let last = Number(localStorage.getItem(key));
