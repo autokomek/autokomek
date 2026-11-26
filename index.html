@@ -100,7 +100,7 @@
       --soft-bg:#F8FAFC;
 
       /* scrolling slider vars */
-      --total-items: 8;
+      --total-items: 3;
       --animation-duration: 28s;
     }
 
@@ -264,12 +264,7 @@
     .item1 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 1) * -1); }
     .item2 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 2) * -1); }
     .item3 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 3) * -1); }
-    .item4 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 4) * -1); }
-    .item5 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 5) * -1); }
-    .item6 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 6) * -1); }
-    .item7 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 7) * -1); }
-    .item8 { animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 8) * -1); }
-
+    
     /* ===== Regions collapsible ===== */
     .regions-hidden { display:none; }
     @media (prefers-reduced-motion: reduce) {
@@ -422,7 +417,7 @@
 
         <div class="w-full lg:w-1/2 relative overflow-hidden">
           <div class="w-full h-[400px] md:h-[500px] relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
-            <!-- ✅ hero rotates between images/img1.jpg ... img8.jpg -->
+            
            <img id="heroImage"
      src="images/evakuator-karaganda.webp"
      fetchpriority="high" loading="eager"
@@ -507,11 +502,7 @@
           <div class="item item1"><img src="images/evakuator-karaganda.webp" alt="Эвакуатор AutoKomek в Караганде" loading="lazy" decoding="async"></div>
 <div class="item item2"><img src="images/evakuator-land-cruiser.webp" alt="Эвакуация Toyota Land Cruiser в Караганде" loading="lazy" decoding="async"></div>
 <div class="item item3"><img src="images/perevozka-vnedorozhnika.webp" alt="Перевозка внедорожников эвакуатором AutoKomek" loading="lazy" decoding="async"></div>
-          <div class="item item4"><img src="images/img4.jpg" alt="Фото 4" loading="lazy" decoding="async"></div>
-          <div class="item item5"><img src="images/img5.jpg" alt="Фото 5" loading="lazy" decoding="async"></div>
-          <div class="item item6"><img src="images/img6.jpg" alt="Фото 6" loading="lazy" decoding="async"></div>
-          <div class="item item7"><img src="images/img7.jpg" alt="Фото 7" loading="lazy" decoding="async"></div>
-          <div class="item item8"><img src="images/img8.jpg" alt="Фото 8" loading="lazy" decoding="async"></div>
+          
         </div>
       </div>
     </div>
