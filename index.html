@@ -12,7 +12,7 @@
   "telephone": "+77750092909",
   "image": "https://www.autokomek09.kz/images/evakuator-karaganda.webp",
 "logo": "https://www.autokomek09.kz/images/logo-autokomek.webp",
-"priceRange": "от 9999 KZT",
+"priceRange": "от 10000 KZT",
   "description": "Круглосуточные услуги эвакуатора в Караганде и Карагандинской области. Перевозка автомобилей, внедорожников и спецтехники, город и межгород.",
   "areaServed": [
     {"@type": "Place", "name": "Караганда, Казахстан"},
@@ -65,7 +65,7 @@
 }
 </script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Эвакуатор Караганда и область 24/7 | AutoKomek</title>
 <meta name="description" content="Эвакуатор 24/7 в Караганде и Карагандинской области. Вызвать эвакуатор в Балхаше, Ботакаре, Осакаровке, Шахтинске, Сарани, Абае и других городах. Межгород, перевозка автомобилей и спецтехники. Телефон: +7 775 009 29 09.">
 <link rel="canonical" href="https://www.autokomek09.kz/" />
@@ -264,6 +264,11 @@
 
     /* ===== Regions collapsible ===== */
     .regions-hidden { display:none; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+      .scorlling { display: flex; gap: 12px; overflow-x: auto; mask-image: none; -webkit-mask-image: none; }
+      .scorlling .item { position: relative; left: auto; flex: 0 0 250px; animation: none !important; }
+    }
   </style>
 </head>
 
@@ -330,7 +335,7 @@
       </div>
 
       <!-- Mobile menu -->
-      <div id="mobileMenu"
+      <div id="mobileMenu" inert
            class="md:hidden absolute left-0 right-0 top-full bg-white/95 backdrop-blur-md border-t border-slate-100 menu-collapsed">
         <div class="container mx-auto px-4 py-4">
           <div class="grid grid-cols-2 gap-2 mb-3">
@@ -373,6 +378,7 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <!-- HERO -->
   <section id="top" class="pt-28 pb-12 md:pt-40 md:pb-20 overflow-hidden relative">
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-red-50 rounded-full blur-3xl -z-10 opacity-50 translate-x-1/2 -translate-y-1/2"></div>
@@ -381,7 +387,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
 
-        <div class="w-full lg:w-1/2 text-center lg:text-left z-10" data-aos="fade-up">
+        <div class="w-full lg:w-1/2 text-center lg:text-left z-10">
           <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-1.5 rounded-full shadow-sm mb-6">
             <span class="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
             <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">Водитель готов к выезду</span>
@@ -406,11 +412,12 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/2 relative overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+        <div class="w-full lg:w-1/2 relative overflow-hidden">
           <div class="w-full h-[400px] md:h-[500px] relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
             <!-- ✅ hero rotates between images/img1.jpg ... img8.jpg -->
            <img id="heroImage"
      src="images/evakuator-karaganda.webp"
+     fetchpriority="high" loading="eager"
      class="w-full h-full object-cover transition-opacity duration-700"
      alt="Эвакуатор AutoKomek в Караганде 24/7 — перевозка автомобилей и внедорожников">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
@@ -421,7 +428,7 @@
               <div class="bg-green-100 p-2 rounded-lg text-green-600"><i class="fas fa-tag"></i></div>
               <div>
                 <p class="text-[10px] text-gray-400 font-bold uppercase">Цена от</p>
-                <p class="font-bold text-slate-900">9 999 ₸</p>
+                <p class="font-bold text-slate-900">10 000 ₸</p>
               </div>
             </div>
           </div>
@@ -511,7 +518,7 @@
           <p class="text-slate-500 mt-3 font-medium">Работаем 24/7.</p>
 
           <div class="mt-5 flex items-center justify-center">
-            <button id="toggleRegionsBtn"
+            <button id="toggleRegionsBtn" aria-controls="regionsAll" aria-expanded="false"
                     class="bg-white border border-slate-200 px-6 py-3 rounded-2xl font-black text-slate-900 shadow-sm hover:shadow-md transition active:scale-95 inline-flex items-center gap-2">
               <i id="toggleRegionsIcon" class="fa-solid fa-chevron-down text-slate-500"></i>
               <span id="toggleRegionsText">Показать все районы</span>
@@ -741,7 +748,7 @@
             <i class="fas fa-phone"></i>
           </div>
           <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-right">
-            <h4 class="font-bold text-lg mb-1">1. Звонок / WhatsApp</h4>
+            <h3 class="font-bold text-lg mb-1">1. Звонок / WhatsApp</h3>
             <p class="text-sm text-slate-500">Уточняем место, тип авто и задачу.</p>
           </div>
         </div>
@@ -751,7 +758,7 @@
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-left">
-            <h4 class="font-bold text-lg mb-1">2. Выезд</h4>
+            <h3 class="font-bold text-lg mb-1">2. Выезд</h3>
             <p class="text-sm text-slate-500">Выезжаем сразу. Работаем 24/7.</p>
           </div>
         </div>
@@ -761,7 +768,7 @@
             <i class="fas fa-check"></i>
           </div>
           <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-sm" data-aos="fade-right">
-            <h4 class="font-bold text-lg mb-1">3. Помощь</h4>
+            <h3 class="font-bold text-lg mb-1">3. Помощь</h3>
             <p class="text-sm text-slate-500">Погрузка, фиксация и доставка по адресу.</p>
           </div>
         </div>
@@ -805,7 +812,7 @@
           Сколько стоит эвакуатор в Караганде?
         </summary>
         <p class="mt-4 text-slate-600">
-          Стоимость эвакуатора по городу от 10000 тысяч тенге а на трассе от 250 тенге 1 километр все зависит от  типа автомобиля и сложности погрузки. Точную стоимость можно узнать по телефону или через WhatsApp.
+          Стоимость эвакуатора по городу — от 10 000 тенге, межгород — от 250 тенге за километр. Цена зависит от типа автомобиля и сложности погрузки. Точную стоимость можно узнать по телефону или через WhatsApp.
         </p>
       </details>
 
@@ -867,6 +874,7 @@
   </div>
 </section>
 <!-- END FAQ AUTOKOMEK -->
+  </main>
   <!-- FOOTER -->
   <footer class="bg-slate-900 text-white py-12 text-center rounded-t-[50px]">
     <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-2xl text-white mx-auto mb-6">
@@ -903,7 +911,7 @@
       <a href="tel:+77750092909" class="flex-1 bg-white text-slate-900 rounded-xl flex items-center justify-center py-4 font-black text-lg active:scale-95 transition">
         <i class="fas fa-phone mr-2 text-red-500"></i> ПОЗВОНИТЬ
       </a>
-      <a href="https://wa.me/77750092909" class="w-16 bg-green-500 text-white rounded-xl flex items-center justify-center text-2xl active:scale-95 transition">
+      <a aria-label="Написать в WhatsApp" href="https://wa.me/77750092909" class="w-16 bg-green-500 text-white rounded-xl flex items-center justify-center text-2xl active:scale-95 transition">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
@@ -911,44 +919,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ once: true, duration: 800 });
-
-    // ✅ Hero image rotation on each visit (img1.jpg ... img8.jpg)
-    (function rotateHeroImage(){
-      const heroEl = document.getElementById('heroImage');
-      if (!heroEl) return;
-
-      const images = [
-    'images/evakuator-karaganda.webp',
-    'images/evakuator-land-cruiser.webp',
-    'images/perevozka-vnedorozhnika.webp'
-];
-      const key = 'autokomekHeroIdx';
-
-      let last = Number(localStorage.getItem(key));
-      if (!Number.isFinite(last)) last = -1;
-
-      const next = (last + 1) % images.length;
-      localStorage.setItem(key, String(next));
-
-      const nextSrc = images[next];
-
-      // preload for smooth swap
-      const pre = new Image();
-      pre.onload = () => {
-        heroEl.style.opacity = '0';
-        setTimeout(() => {
-          heroEl.src = nextSrc;
-          // fade back in after browser starts rendering new image
-          requestAnimationFrame(() => { heroEl.style.opacity = '1'; });
-        }, 140);
-      };
-      pre.onerror = () => { /* keep current src */ };
-      pre.src = nextSrc;
-
-      // initial opacity (in case)
-      heroEl.style.opacity = '1';
-    })();
+    if (window.AOS) AOS.init({ once: true, duration: 800 });
 
     // burger
     const burgerBtn = document.getElementById('burgerBtn');
@@ -956,6 +927,8 @@
     const mobileMenu = document.getElementById('mobileMenu');
 
     function closeMenu() {
+      mobileMenu.inert = true;
+      burgerBtn.setAttribute('aria-label', 'Открыть меню');
       mobileMenu.classList.remove('menu-expanded');
       mobileMenu.classList.add('menu-collapsed');
       burgerBtn.setAttribute('aria-expanded', 'false');
@@ -964,6 +937,8 @@
     }
 
     function openMenu() {
+      mobileMenu.inert = false;
+      burgerBtn.setAttribute('aria-label', 'Закрыть меню');
       mobileMenu.classList.remove('menu-collapsed');
       mobileMenu.classList.add('menu-expanded');
       burgerBtn.setAttribute('aria-expanded', 'true');
@@ -996,6 +971,7 @@
     if (toggleRegionsBtn && regionsAll) {
       toggleRegionsBtn.addEventListener('click', () => {
         const hidden = regionsAll.classList.contains('regions-hidden');
+        toggleRegionsBtn.setAttribute('aria-expanded', String(hidden));
         if (hidden) {
           regionsAll.classList.remove('regions-hidden');
           toggleRegionsText.textContent = 'Скрыть все районы';
