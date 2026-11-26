@@ -1,0 +1,35 @@
+name: Build Tailwind CSS
+# Build local CSS for AutoKomek
+
+on:
+  push:
+    branches:
+      - perfomance-v2
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build CSS
+        run: |
+          mkdir -p css
+          printf '@tailwind base;\n@tailwind components;\n@tailwind utilities;\n' > input.css
+          npx --yes tailwindcss@3.4.17 -i input.css -o css/tailwind.min.css --content './*.html' --minify
+
+      - name: Upload CSS
+        uses: actions/upload-artifact@v4
+        with:
+          name: tailwind-css
+          path: css/tailwind.min.css
