@@ -238,9 +238,14 @@
       object-fit: cover;
     }
 
-    @keyframes scrollleft{
-      to { left: -250px; }
+    @keyframes scrollLeft {
+    from {
+        transform: translateX(0);
     }
+    to {
+        transform: translateX(-840px);
+    }
+}
 
     .item{
       width:250px;
