@@ -1,4 +1,5 @@
 name: Build Tailwind CSS
+# Build local CSS for AutoKomek
 
 on:
   push:
