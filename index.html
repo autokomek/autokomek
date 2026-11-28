@@ -235,6 +235,14 @@
     .ak-order-list { list-style: decimal; padding-left: 1.5rem; margin-top: .75rem; color: #475569; }
     .ak-order-list li { margin-bottom: .5rem; }
     section[id] { scroll-margin-top: 85px; }
+
+    .ak-platform-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;}
+    .ak-platform-link {display:flex;align-items:center;gap:12px;padding:16px;background:white;border:1px solid #e2e8f0;border-radius:18px;text-decoration:none;color:#1e293b;transition:border-color .2s;}
+    .ak-platform-link:hover {border-color:#ef4444;}
+    .ak-platform-icon {display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border-radius:12px;color:white;font-weight:900;font-size:14px;}
+    .ak-platform-copy {flex:1;min-width:0;}
+    .ak-platform-copy strong,.ak-platform-copy small {display:block;}
+    .ak-platform-copy small {color:#475569;font-size:13px;}
   </style>
 <script type="application/ld+json">
 {
@@ -371,7 +379,10 @@
         "closes": "23:59"
       },
       "sameAs": [
-        "https://www.instagram.com/autokomek/"
+        "https://www.instagram.com/autokomek/",
+        "https://share.google/Rz1sjM3cwN2VZTfnw",
+        "https://2gis.kz/karaganda/geo/70000001079800567",
+        "https://yandex.ru/navi/org/evakuatora_karagandy/158958806533"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -965,6 +976,19 @@
   </div>
 </section>
 <!-- END FAQ AUTOKOMEK -->
+  <section id="platforms" class="py-12 bg-slate-50" aria-labelledby="platforms-title">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 id="platforms-title" class="text-3xl font-black text-center mb-3">AutoKomek на других площадках</h2>
+      <p class="text-center text-slate-600 mb-6">Наши профили, объявления, фотографии работ и отзывы клиентов.</p>
+      <div class="ak-platform-grid">
+        <a class="ak-platform-link" href="https://share.google/Rz1sjM3cwN2VZTfnw" target="_blank" rel="noopener noreferrer"><span class="ak-platform-icon" style="background:#2563eb" aria-hidden="true">G</span><span class="ak-platform-copy"><strong>Google Карты</strong><small>Отзывы и карточка</small></span><span aria-hidden="true">↗</span></a>
+        <a class="ak-platform-link" href="https://2gis.kz/karaganda/geo/70000001079800567" target="_blank" rel="noopener noreferrer"><span class="ak-platform-icon" style="background:#15803d" aria-hidden="true">2</span><span class="ak-platform-copy"><strong>2ГИС</strong><small>Карточка компании</small></span><span aria-hidden="true">↗</span></a>
+        <a class="ak-platform-link" href="https://yandex.ru/navi/org/evakuatora_karagandy/158958806533" target="_blank" rel="noopener noreferrer"><span class="ak-platform-icon" style="background:#dc2626" aria-hidden="true">Я</span><span class="ak-platform-copy"><strong>Яндекс Карты</strong><small>Отзывы и карточка</small></span><span aria-hidden="true">↗</span></a>
+        <a class="ak-platform-link" href="https://www.olx.kz/d/obyavlenie/autokomek09-evakuator-karaganda-IDpC4l0.html" target="_blank" rel="noopener noreferrer"><span class="ak-platform-icon" style="background:#005b60" aria-hidden="true">OLX</span><span class="ak-platform-copy"><strong>OLX.kz</strong><small>Объявление об услугах</small></span><span aria-hidden="true">↗</span></a>
+        <a class="ak-platform-link" href="https://www.instagram.com/autokomek/" target="_blank" rel="noopener noreferrer"><span class="ak-platform-icon" style="background:#be185d" aria-hidden="true">IG</span><span class="ak-platform-copy"><strong>Instagram</strong><small>Фото и видео работ</small></span><span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
   </main>
   <!-- FOOTER -->
   <footer class="bg-slate-900 text-white py-12 text-center rounded-t-[50px]">
